@@ -45,7 +45,7 @@ public class Homework1 {
     }
 
     public static void addOrSubtractAndPrint(int initValue, int delta, boolean increment) {
-        if(increment = true){
+        if(increment == true){
             System.out.println(initValue + delta);
         }
         else {
