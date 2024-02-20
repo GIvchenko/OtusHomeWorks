@@ -23,7 +23,7 @@ public class Main {
         }
         Box box1 = new Box(10,10,10,"Red",true,true);
         box1.info();
-        box1.putSubject();
+        box1.putSubject("Ball");
         box1.setOpen(false);
         box1.getSubjectFromBox();
     }

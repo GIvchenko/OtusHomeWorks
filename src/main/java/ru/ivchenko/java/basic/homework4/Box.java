@@ -22,6 +22,7 @@ public class Box {
     }
     public void setColor(String color){
         this.color = color;
+        System.out.println("Теперь коробка " + color);
     }
     public void setOpen(boolean open){
         this.open = open;
@@ -40,9 +41,9 @@ public class Box {
     public void info(){
         System.out.println("Размеры(Д*Ш*В): " + boxLength + "*" + boxWidth + "*" + boxHeight + "\nЦвет: " + color + "\nКоробка открыта: " + open + "\nКоробка пуста: " + theBoxIsEmpty);
     }
-    public void putSubject(){
+    public void putSubject(String item){
         if(open == true && theBoxIsEmpty == true){
-            System.out.println("Вы положили предмет в коробку!");
+            System.out.println("Вы положили " + item + " в коробку!");
             theBoxIsEmpty = false;
         }
         else if(open != true && theBoxIsEmpty == true){
@@ -62,7 +63,7 @@ public class Box {
             theBoxIsEmpty = true;
         }
         else if(open != true && theBoxIsEmpty != true){
-            System.out.println("Колобка закрыта.");
+            System.out.println("Коробка закрыта.");
         }
         else if(open == true && theBoxIsEmpty == true){
             System.out.println("Коробка уже пуста!");
